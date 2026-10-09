@@ -1,0 +1,28 @@
+{
+  "project": {
+    "name": "Vehicle Speed Warning",
+    "domain": "Body and driver information",
+    "owner": "Test Engineering Lead"
+  },
+  "requirements": [
+    {
+      "externalId": "REQ-VSW-001",
+      "text": "When vehicle speed exceeds 100 km/h, the warning controller shall display an overspeed warning within 200 ms.",
+      "type": "PERFORMANCE",
+      "priority": "HIGH",
+      "component": "Warning controller",
+      "condition": "Vehicle speed exceeds 100 km/h",
+      "response": "Overspeed warning is displayed within 200 ms",
+      "safetyRelevant": true,
+      "cybersecurityRelevant": false
+    },
+    {
+      "externalId": "REQ-DIAG-002",
+      "text": "When an authenticated diagnostic tester requests the active warning state, the system shall return the state and timestamp.",
+      "type": "DIAGNOSTIC",
+      "priority": "MEDIUM",
+      "component": "Diagnostic service",
+      "cybersecurityRelevant": true
+    }
+  ]
+}
